@@ -1,19 +1,19 @@
 @echo off
-mkdir src
+if not exist src mkdir src
 cd src
-mkdir assets
-mkdir config
-mkdir components
-mkdir constants
-mkdir fonts
-mkdir hooks
-mkdir mocks
-mkdir routes
-mkdir pages
-mkdir service
-mkdir styles
+if not exist assets mkdir assets
+if not exist config mkdir config
+if not exist components mkdir components
+if not exist constants mkdir constants
+if not exist fonts mkdir fonts
+if not exist hooks mkdir hooks
+if not exist mocks mkdir mocks
+if not exist routes mkdir routes
+if not exist pages mkdir pages
+if not exist service mkdir service
+if not exist styles mkdir styles
 cd pages
-mkdir Home
+if not exist Home mkdir Home
 cd Home
 echo import React from 'react'; > index.tsx
 cd ..
